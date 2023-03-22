@@ -3,7 +3,7 @@ def call(allowedApprovers) {
     def dayOfWeek = now.format('EEEE')
     def timeOfDay = now.format('HH:mm:ss')
                      
-    if (dayOfWeek != 'Saturday' && dayOfWeek != 'Sunday' && timeOfDay >= '08:45:00' && timeOfDay <= '19:30:00') {
+    if (dayOfWeek != 'Saturday' && dayOfWeek != 'Sunday' && timeOfDay >= '08:45:00' && timeOfDay <= '20:32:00') {
         def approvers = input message: 'Deploy to production?',
                               ok: 'Approve',
                               submitterParameter:'APPROVER'
