@@ -1,4 +1,5 @@
 def call(allowedApprovers) {
+    def allowedApprovers = ["qa_hod"]
     def now = new Date()
     def dayOfWeek = now.format('EEEE')
     def timeOfDay = now.format('HH:mm:ss')
